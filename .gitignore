@@ -1,0 +1,13 @@
+venv/
+*cache*
+.python-version
+.vscode
+.coverage
+htmlcov/
+.env
+
+input.yaml
+scratch.*
+**/*.html
+!email/template.html
+2022.yaml

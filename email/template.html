@@ -1,0 +1,19 @@
+<div style="margin-top: 2em">
+  <h1>Secret Santa 2022</h1>
+
+  <p>Hi {{giver.name}}, you've got <span class="secret-person">{{receiver.name}}</span>!</p>
+  <p>Please do not spend more than <span class="limit">$100</span>. Happy shopping and Merry Christmas!</p>
+
+  <p>- Santa Bot</p>
+
+  <div class="wishlist">
+    {% if wishlist %}
+    <p style="font-weight: bold">{{receiver.name}}'s wishlist</p>
+    <ul>
+      {% for item in wishlist %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>

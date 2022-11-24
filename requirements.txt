@@ -1,0 +1,11 @@
+black
+coverage
+flake8
+html2image
+html2text
+jinja2
+markdown
+mypy
+pre-commit
+pytest
+python-dotenv
