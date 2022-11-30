@@ -1,0 +1,30 @@
+scrapers:
+  - source: amazon
+    scrape_template: https://camelcamelcamel.com/product/{code}
+    href_template: https://www.amazon.com/dp/{code}
+    fields:
+      title: "div.content div.column div.row h2 a"
+      sale_price: "span.stat span.green"
+      list_price: "tr.even:nth-of-type(4) td:nth-of-type(2)"
+    headers:
+      User-Agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
+      Accept-Language: "en-US, en;q=0.5"
+
+email:
+  from: "Secret Santa Bot"
+  subject: "Secret Santa 2022 - Who've you got?"
+
+participants:
+  - name: Bob
+    email: bob@santa.com
+    wishlist:
+      - amazon/B008Y6TFDA
+      - https://www.google.com/shopping/product/8203964298004876819
+      - Anything Santa Claus related
+
+  - name: Alice
+    email: alice@santa.com
+    wishlist:
+      - amazon/B07K6Y4GF2
+      - https://auroragift.com/products/15952-dr-seuss-18in-grinch?variant=32798098784341
+      - Anything Grinch related
